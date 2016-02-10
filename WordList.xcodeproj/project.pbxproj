@@ -24,6 +24,8 @@
 		00BD07271C6AED7200CC328E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD07261C6AED7200CC328E /* FinishViewController.swift */; };
 		00BD07291C6AEDB400CC328E /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD07281C6AEDB400CC328E /* ListTableViewController.swift */; };
 		00BD072B1C6AEDE300CC328E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD072A1C6AEDE300CC328E /* AddViewController.swift */; };
+		00BD072E1C6B217B00CC328E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD072C1C6B217B00CC328E /* ListTableViewCell.swift */; };
+		00BD072F1C6B217B00CC328E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00BD072D1C6B217B00CC328E /* ListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		00BD07261C6AED7200CC328E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		00BD07281C6AEDB400CC328E /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		00BD072A1C6AEDE300CC328E /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		00BD072C1C6B217B00CC328E /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		00BD072D1C6B217B00CC328E /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				00BD07261C6AED7200CC328E /* FinishViewController.swift */,
 				00BD07281C6AEDB400CC328E /* ListTableViewController.swift */,
 				00BD072A1C6AEDE300CC328E /* AddViewController.swift */,
+				00BD072C1C6B217B00CC328E /* ListTableViewCell.swift */,
+				00BD072D1C6B217B00CC328E /* ListTableViewCell.xib */,
 			);
 			path = WordList;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 				00BD06EE1C6ADAE900CC328E /* Main.storyboard in Resources */,
 				00BD071F1C6ADB9600CC328E /* Default-667h@2x.png in Resources */,
 				00BD07201C6ADB9600CC328E /* Default-736h@3x.png in Resources */,
+				00BD072F1C6B217B00CC328E /* ListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BD072E1C6B217B00CC328E /* ListTableViewCell.swift in Sources */,
 				00BD06EB1C6ADAE900CC328E /* ViewController.swift in Sources */,
 				00BD07271C6AED7200CC328E /* FinishViewController.swift in Sources */,
 				00BD072B1C6AEDE300CC328E /* AddViewController.swift in Sources */,

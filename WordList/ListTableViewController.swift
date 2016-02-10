@@ -9,9 +9,15 @@
 import UIKit
 
 class ListTableViewController: UITableViewController {
+    
+    var wordArray:[AnyObject]=[]
+    let saveData=NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.registerNib(UINib(nibName:"ListTableViewCell",bundle:
+            nil),forCellReuseIdentifier:"cell")
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -20,6 +26,36 @@ class ListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    override func viewWillAppear(animated:Bool){
+        super.viewWillAppear(animated)
+        if saveData.arrayForKey("WORD") != nil{
+            wordArray=saveData.arrayForKey("WORD")!
+        }
+        tableView.reloadData()
+    }
+    
+    //セクション数の設定
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    //セルの個数指定
+    override func tableView(tableView: UITableView, numberOfRowsInSection section:Int)->Int{
+        return wordArray.count
+    }
+    
+    //セルの中身の表示の仕方
+    override func tableView(tableView:UITableView,cellForRowAtIndexPath indexPath:NSIndexPath)->UITableViewCell{
+        let cell=tableView.dequeueReusableCellWithIdentifier("cell",forIndexPath:indexPath) as! ListTableViewCell
+        
+        let nowIndexPathDictionary:(AnyObject)=wordArray[indexPath.row]
+        
+        cell.englishLabel.text=nowIndexPathDictionary["english"] as? String
+        cell.japaneseLabel.text=nowIndexPathDictionary["japanese"] as? String
+        
+        return cell
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,15 +63,15 @@ class ListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+ //   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+ //       return 0
+   // }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+      //  return 0
+   // }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
