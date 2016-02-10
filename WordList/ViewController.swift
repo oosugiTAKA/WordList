@@ -26,11 +26,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startButtonTapped(){
-    let saveData=NSUserDefaults.standardUserDefaults()
+        let saveData=NSUserDefaults.standardUserDefaults()
     
         if let wordArray=saveData.arrayForKey("WORD"){
             if wordArray.count>0{
-                self.performSegueWithIdentifier("toQuestionView",sender:nil)
+                self.performSegueWithIdentifier("tpQuestionView", sender: nil)
                 return
             }
         }

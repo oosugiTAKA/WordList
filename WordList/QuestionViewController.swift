@@ -16,7 +16,7 @@ class QuestionViewController: UIViewController {
     var isAnswered:Bool=false//回答したか次の問題に行くかの判定
     var wordArray:[AnyObject]=[]//ユーザデフォルトからとる配列
     var shuffledWordArray:[AnyObject]=[]//シャッフルされた配列
-    var nowNumber:Int=0//現在の回答数
+    var nowNumber: Int = 0//現在の回答数
     
     let saveData=NSUserDefaults.standardUserDefaults()
 
@@ -27,9 +27,10 @@ class QuestionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //viewが現れた時に呼ばれる
-    override func viewWillAppear(animated:Bool){
+    override func viewWillAppear(animated: Bool){
         wordArray=saveData.arrayForKey("WORD")!
         //問題シャッフル
+        
         shuffle()
         questionLabel.text=shuffledWordArray[nowNumber]["english"] as? String
     }
@@ -40,12 +41,14 @@ class QuestionViewController: UIViewController {
     }
     
     //配列をランダムにシャッフルするメソッド
-    @IBAction func shuffle(){
-        while wordArray.count>0{
+    func shuffle(){
+        while wordArray.count>0 {
             let index=Int(rand()) % wordArray.count
             shuffledWordArray.append(wordArray[index])
+            wordArray.removeAtIndex(index)
         }
     }
+    
     //”次へ”のボタンを押した時のメソッド
     @IBAction func nextButtonPushed(){
     
