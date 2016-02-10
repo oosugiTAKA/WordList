@@ -36,7 +36,7 @@ class AddViewController: UIViewController {
     //保存ボタンが押された時のsaveWord()メソッドの記述
     @IBAction func saveWord(){
         let wordDictionary =
-                ["english":englishTextField.text,"japanese":japaneseTextField.text]
+                ["english":englishTextField.text!,"japanese":japaneseTextField.text!]
         
         wordArray.append (wordDictionary)
         saveData.setObject(wordArray ,forKey: "WORD")
