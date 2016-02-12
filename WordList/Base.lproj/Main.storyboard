@@ -21,7 +21,7 @@
                                     <color key="titleColor" red="0.97642941719999998" green="1" blue="0.94064187889999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yP6-uj-Mbv" kind="modal" id="Eo6-sZ-99X"/>
+                                    <segue destination="yP6-uj-Mbv" kind="modal" id="9LP-C0-uOI"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_logo.png" id="0Lo-iv-7BA">
@@ -37,7 +37,7 @@
                                     <color key="titleColor" red="0.97642941719999998" green="1" blue="0.94064187889999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMK-az-hdr"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oa2-4G-LhQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +46,7 @@
                     <navigationItem key="navigationItem" id="4ab-Qz-y8a"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="v6z-pK-o63" kind="modal" identifier="toQuestionView" id="Bxr-AC-2nk"/>
+                        <segue destination="v6z-pK-o63" kind="modal" identifier="toQuestionView" id="0KQ-eU-mbK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,22 +69,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank.png" id="akt-WJ-MBp">
-                                <rect key="frame" x="20" y="113" width="240" height="128"/>
+                                <rect key="frame" x="20" y="77" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hH6-2R-mFK">
-                                <rect key="frame" x="86" y="152" width="109" height="49"/>
+                                <rect key="frame" x="86" y="123" width="109" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_blank.png" id="nuP-TR-I2o">
-                                <rect key="frame" x="115" y="378" width="240" height="128"/>
+                                <rect key="frame" x="125" y="245" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eUy-NY-ch9">
+                                <rect key="frame" x="191" y="291" width="109" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OXY-wb-qWk">
-                                <rect key="frame" x="99" y="566" width="177" height="47"/>
+                                <rect key="frame" x="103" y="471" width="177" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50829899000000001" blue="0.066341426529999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -92,25 +99,18 @@
                                     <color key="titleColor" red="0.97642941719999998" green="1" blue="0.94064187889999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonPushed" destination="v6z-pK-o63" eventType="touchUpInside" id="fGX-KE-GN0"/>
+                                    <action selector="nextButtonPushed" destination="v6z-pK-o63" eventType="touchUpInside" id="pcv-bO-FHa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eUy-NY-ch9">
-                                <rect key="frame" x="181" y="417" width="109" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.24124757014970133" green="0.53575680435786877" blue="0.14721056011420061" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="answerLabel" destination="eUy-NY-ch9" id="VH4-Rt-6aX"/>
-                        <outlet property="nextButton" destination="OXY-wb-qWk" id="ooC-fe-W6s"/>
-                        <outlet property="questionLabel" destination="hH6-2R-mFK" id="7Ut-o2-MPF"/>
-                        <segue destination="Xiq-Mk-v79" kind="modal" identifier="toFinishView" id="AyT-bB-Bsp"/>
+                        <outlet property="answerLabel" destination="eUy-NY-ch9" id="tJt-if-tmq"/>
+                        <outlet property="nextButton" destination="OXY-wb-qWk" id="oHE-sg-nDI"/>
+                        <outlet property="questionLabel" destination="hH6-2R-mFK" id="ULi-6Y-WHv"/>
+                        <segue destination="Xiq-Mk-v79" kind="modal" identifier="toFinishView" id="Suu-tC-TOD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omp-sw-IzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,7 +130,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gia-02-D0i">
-                                <rect key="frame" x="103" y="542" width="166" height="58"/>
+                                <rect key="frame" x="103" y="464" width="166" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50829899000000001" blue="0.066341426529999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -160,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="kYh-eb-nfY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="kYh-eb-nfY">
                                 <rect key="frame" x="0.0" y="92" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kYh-eb-nfY" id="PxO-gJ-jzd">
@@ -182,7 +182,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="K0P-Ce-wIN">
                             <connections>
-                                <segue destination="b16-aY-leS" kind="push" id="rCi-35-pov"/>
+                                <segue destination="b16-aY-leS" kind="push" id="veM-Xt-Z5u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -233,15 +233,11 @@
                     <navigationItem key="navigationItem" title="新規追加" id="oSi-yl-G42">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="7zC-fF-0ua">
                             <connections>
-                                <action selector="saveWord" destination="b16-aY-leS" id="rnd-qG-iZO"/>
+                                <action selector="saveWord" destination="b16-aY-leS" id="C4E-Gh-g2r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="englishTextField" destination="6z0-25-Kn4" id="tXz-7p-ISJ"/>
-                        <outlet property="japaneseTextField" destination="pTk-PJ-HAy" id="tFQ-cn-EuM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xgi-uF-0zO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

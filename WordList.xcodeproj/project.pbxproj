@@ -468,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myname.WordList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myname.WordList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -549,6 +551,7 @@
 				00BD070F1C6ADAEA00CC328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00BD07101C6ADAEA00CC328E /* Build configuration list for PBXNativeTarget "WordListTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +560,7 @@
 				00BD07121C6ADAEA00CC328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00BD07131C6ADAEA00CC328E /* Build configuration list for PBXNativeTarget "WordListUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +569,7 @@
 				00BD07151C6ADAEA00CC328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
